@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Insert String UI Property</Title>
+      <Shortcut>uiprops</Shortcut>
+      <Description>Code snippet for inserting a String UI Property</Description>
+      <Author>D3 Automation</Author>
+      <SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>propName</ID>
+					<Default>MyString</Default>
+				</Literal>
+				<Literal>
+					<ID>sequence</ID>
+					<Default>1</Default>
+				</Literal>
+			</Declarations>
+			<Code Language="IntentV3">
+				<![CDATA[Rule $propName$_Choices As List = {""}
+	Rule $propName$ As String = ui$propName$.value
+	Parameter Rule dv$propName$ As String = First($propName$_Choices)
+	Child ui$propName$ As :StringProperty
+		CategoryPart = GeneralCategory
+		Seq = $sequence$
+		BaseName = "$propName$"
+	End Child
+	$end$]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>

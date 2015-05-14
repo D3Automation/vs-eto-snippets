@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Insert ETO Lookup Rule</Title>
+      <Shortcut>enlook</Shortcut>
+      <Description>Code snippet for inserting a rule</Description>
+      <Author>D3 Automation</Author>
+      <SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>ruleName</ID>
+					<Default>ruleName</Default>
+				</Literal>
+				<Literal>
+					<ID>typeName</ID>
+					<Default>Any</Default>
+				</Literal>
+				<Literal>
+					<ID>ruleValue</ID>
+					<Default>NoValue</Default>
+				</Literal>
+			</Declarations>
+			<Code Language="IntentV3">
+				<![CDATA[Lookup Rule $ruleName$ As $typeName$ = $ruleValue$$end$]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>
