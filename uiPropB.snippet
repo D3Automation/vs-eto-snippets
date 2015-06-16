@@ -20,10 +20,14 @@
 					<ID>sequence</ID>
 					<Default>1</Default>
 				</Literal>
+				<Literal>
+					<ID>defaultValue</ID>
+					<Default>True</Default>
+				</Literal>
 			</Declarations>
 			<Code Language="IntentV3">
 				<![CDATA[Rule $propName$ As Boolean = ui$propName$.Value
-	Parameter Rule dv$propName$ As Boolean = True
+	Parameter Rule dv$propName$ As Boolean = $defaultValue$
 	Child ui$propName$ As :BooleanProperty
     	CategoryPart = GeneralCategory
     	Seq = $sequence$
