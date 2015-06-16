@@ -2,9 +2,9 @@
 <CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
 	<CodeSnippet Format="1.0.0">
 		<Header>
-			<Title>Insert String Rule Property</Title>
-      <Shortcut>ruleS</Shortcut>
-      <Description>Code snippet for inserting a String Rule Property</Description>
+			<Title>Insert Part Lookup Property</Title>
+      <Shortcut>lookupp</Shortcut>
+      <Description>Code snippet for inserting a Part Lookup Property</Description>
       <Author>D3 Automation</Author>
       <SnippetTypes>
 				<SnippetType>Expansion</SnippetType>
@@ -14,15 +14,15 @@
 			<Declarations>
 				<Literal>
 					<ID>propName</ID>
-					<Default>MyString</Default>
+					<Default>MyPart</Default>
 				</Literal>
 				<Literal>
 					<ID>value</ID>
-					<Default>1</Default>
+					<Default>""</Default>
 				</Literal>
 			</Declarations>
 			<Code Language="IntentV3">
-				<![CDATA[Rule $propName$ As String = $value$
+				<![CDATA[Lookup Parameter Rule $propName$ As Part = $value$
 	$end$]]>
 			</Code>
 		</Snippet>
