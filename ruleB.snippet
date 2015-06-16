@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Insert Boolean Rule Property</Title>
+      <Shortcut>rulen</Shortcut>
+      <Description>Code snippet for inserting a Boolean Rule Property</Description>
+      <Author>D3 Automation</Author>
+      <SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>propName</ID>
+					<Default>MyBoolean</Default>
+				</Literal>
+				<Literal>
+					<ID>value</ID>
+					<Default>1</Default>
+				</Literal>
+			</Declarations>
+			<Code Language="IntentV3">
+				<![CDATA[Rule $propName$ As Boolean = $value$
+	$end$]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>
