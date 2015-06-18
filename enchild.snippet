@@ -2,9 +2,9 @@
 <CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
 	<CodeSnippet Format="1.0.0">
 		<Header>
-			<Title>Insert Boolean Lookup Property</Title>
-      <Shortcut>lookupb</Shortcut>
-      <Description>Code snippet for inserting a Boolean Lookup Property</Description>
+			<Title>Insert If statement</Title>
+      <Shortcut>enchild</Shortcut>
+      <Description>Code snippet for inserting a Child</Description>
       <Author>D3 Automation</Author>
       <SnippetTypes>
 				<SnippetType>Expansion</SnippetType>
@@ -13,17 +13,19 @@
 		<Snippet>
 			<Declarations>
 				<Literal>
-					<ID>propName</ID>
-					<Default>MyBoolean</Default>
+					<ID>name</ID>
+					<Default>myChild</Default>
 				</Literal>
 				<Literal>
-					<ID>value</ID>
-					<Default>True</Default>
+					<ID>design</ID>
+					<Default>Any</Default>
 				</Literal>
 			</Declarations>
 			<Code Language="IntentV3">
-				<![CDATA[Lookup Parameter Rule $propName$ As Boolean = $value$
-	$end$]]>
+				<![CDATA[Child $name$ As :$design$
+			$end$
+	End Child
+]]>
 			</Code>
 		</Snippet>
 	</CodeSnippet>

@@ -2,9 +2,9 @@
 <CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
 	<CodeSnippet Format="1.0.0">
 		<Header>
-			<Title>Insert Number Lookup Property</Title>
-      <Shortcut>lookupn</Shortcut>
-      <Description>Code snippet for inserting a Number Lookup Property</Description>
+			<Title>Insert Method</Title>
+      <Shortcut>enmethod</Shortcut>
+      <Description>Code snippet for inserting a method</Description>
       <Author>D3 Automation</Author>
       <SnippetTypes>
 				<SnippetType>Expansion</SnippetType>
@@ -13,17 +13,23 @@
 		<Snippet>
 			<Declarations>
 				<Literal>
-					<ID>propName</ID>
-					<Default>MyNumber</Default>
+					<ID>arg</ID>
+					<Default>Arg</Default>
 				</Literal>
 				<Literal>
-					<ID>value</ID>
-					<Default>1</Default>
+					<ID>argType</ID>
+					<Default>Any</Default>
 				</Literal>
+				<Literal>
+					<ID>returnType</ID>
+					<Default>Any</Default>
+				</Literal>				
 			</Declarations>
 			<Code Language="IntentV3">
-				<![CDATA[Lookup Parameter Rule $propName$ As Number = $value$
-	$end$]]>
+				<![CDATA[Method($arg$ as $argType$) As $returnType$
+					
+					End Method
+				]]>
 			</Code>
 		</Snippet>
 	</CodeSnippet>

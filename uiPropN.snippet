@@ -22,22 +22,16 @@
 				</Literal>
 				<Literal>
 					<ID>defaultValue</ID>
-					<Default>2000</Default>
+					<Default>1</Default>
 				</Literal>				
 			</Declarations>
 			<Code Language="IntentV3">
-				<![CDATA[Rule $propName$_MAX As Number = 3000
-	Rule $propName$_MIN As Number = 2000
-	Rule $propName$_INCR as Number = 1000
-	Rule $propName$ As Number = ui$propName$.Value
+				<![CDATA[Rule $propName$ As Number = ui$propName$.Value
 	Parameter Rule dv$propName$ As Number = $defaultValue$
 	Child ui$propName$ As :NumberProperty
 	    CategoryPart = GeneralCategory
 	    Seq = $sequence$
 	    baseName = "$propName$"
-	    MaxValue = $propName$_MAX
-	    MinValue = $propName$_MIN
-	    Increment = $propName$_INCR
 	End Child
 	$end$]]>
 			</Code>
