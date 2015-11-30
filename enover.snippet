@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Insert Override Code Region</Title>
+      <Shortcut>enover</Shortcut>
+      <Description>Code snippet for creating a code region for overrides</Description>
+      <Author>D3 Automation</Author>
+      <SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>regionName</ID>
+					<Default>My Region</Default>
+				</Literal>
+			</Declarations>
+			<Code Language="IntentV3">
+				<![CDATA['==============================================================
+	'   $regionName$ - Overrides
+	'==============================================================
+	$end$]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>

@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Insert UI Property block</Title>
+      <Shortcut>enprop</Shortcut>
+      <Description>Code snippet for inserting a set for rules for a UI Property</Description>
+      <Author>D3 Automation</Author>
+      <SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>propName</ID>
+					<Default>MyString</Default>
+				</Literal>
+				<Literal>
+					<ID>dataType</ID>
+					<Default>String</Default>
+				</Literal>
+			</Declarations>
+			<Code Language="IntentV3">
+				<![CDATA['==============================================================
+	'   $propName$
+	'==============================================================
+	Rule bn_$propName$ As String = $propName$
+	Rule ro_$propName$ As Boolean = NoValue
+	Rule cl_$propName$ As List = NoValue
+	
+	Parameter Rule dv_$propName$ As $dataType$ = $end$
+	
+	Rule $propName$ As $dataType$ = ui$propName$.value
+	Child ui$propName$ As :$dataType$Property
+	End Child]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>
