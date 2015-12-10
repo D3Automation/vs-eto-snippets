@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Insert If statement</Title>
+      <Shortcut>enchild</Shortcut>
+      <Description>Code snippet for inserting a Child</Description>
+      <Author>D3 Automation</Author>
+      <SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>name</ID>
+					<Default>myChild</Default>
+				</Literal>
+				<Literal>
+					<ID>design</ID>
+					<Default>Any</Default>
+				</Literal>
+			</Declarations>
+			<Code Language="IntentV3">
+				<![CDATA[Child $name$ As :$design$
+			$end$
+	End Child
+]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>

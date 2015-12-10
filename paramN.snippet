@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Insert Number Parameter Property</Title>
+      <Shortcut>paramn</Shortcut>
+      <Description>Code snippet for inserting a Number Parameter Property</Description>
+      <Author>D3 Automation</Author>
+      <SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>propName</ID>
+					<Default>MyNumber</Default>
+				</Literal>
+				<Literal>
+					<ID>value</ID>
+					<Default>1</Default>
+				</Literal>
+			</Declarations>
+			<Code Language="IntentV3">
+				<![CDATA[Parameter Rule $propName$ As Number = $value$
+	$end$]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>

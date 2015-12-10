@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Insert Method</Title>
+      <Shortcut>enmethod</Shortcut>
+      <Description>Code snippet for inserting a method</Description>
+      <Author>D3 Automation</Author>
+      <SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>arg</ID>
+					<Default>Arg</Default>
+				</Literal>
+				<Literal>
+					<ID>argType</ID>
+					<Default>Any</Default>
+				</Literal>
+				<Literal>
+					<ID>returnType</ID>
+					<Default>Any</Default>
+				</Literal>				
+			</Declarations>
+			<Code Language="IntentV3">
+				<![CDATA[Method($arg$ as $argType$) As $returnType$
+					
+					End Method
+				]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>
