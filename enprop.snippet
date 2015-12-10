@@ -22,15 +22,7 @@
 				</Literal>
 			</Declarations>
 			<Code Language="IntentV3">
-				<![CDATA['==============================================================
-	'   $propName$
-	'==============================================================
-	Rule bn_$propName$ As String = $propName$
-	Rule ro_$propName$ As Boolean = NoValue
-	Rule cl_$propName$ As List = NoValue
-	
-	Parameter Rule dv_$propName$ As $dataType$ = $end$
-	
+				<![CDATA[Parameter Rule dv_$propName$ As $dataType$ = $end$
 	Rule $propName$ As $dataType$ = ui$propName$.value
 	Child ui$propName$ As :$dataType$Property
 	End Child]]>
