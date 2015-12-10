@@ -2,8 +2,8 @@
 <CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
 	<CodeSnippet Format="1.0.0">
 		<Header>
-			<Title>Insert String UI Property</Title>
-      <Shortcut>uiprops</Shortcut>
+			<Title>Insert UI Property with choice list</Title>
+      <Shortcut>enpropl</enpropl></Shortcut>
       <Description>Code snippet for inserting a String UI Property</Description>
       <Author>D3 Automation</Author>
       <SnippetTypes>
@@ -22,15 +22,12 @@
 				</Literal>
 			</Declarations>
 			<Code Language="IntentV3">
-				<![CDATA[Rule $propName$_Choices As List = {""}
+				<![CDATA[Rule cl_$propName$ As List = NoValue$end$
 	Rule $propName$ As String = ui$propName$.value
-	Parameter Rule dv$propName$ As String = First($propName$_Choices)
+	Parameter Rule dv_$propName$ As String = First(cl_$propName$)
 	Child ui$propName$ As :StringProperty
-		CategoryPart = GeneralCategory
-		Seq = $sequence$
 		BaseName = "$propName$"
-	End Child
-	$end$]]>
+	End Child]]>
 			</Code>
 		</Snippet>
 	</CodeSnippet>
