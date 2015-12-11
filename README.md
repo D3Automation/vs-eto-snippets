@@ -27,13 +27,13 @@ en_Coalesce(Foo, Bar, ruleName:=:FooBar)
 ```
 * enifelse - Insert an If-Else statement.
 
-	```
-	If (True) Then
-		
-	Else
+```
+If (True) Then
 	
-	End If
-	```
+Else
+
+End If
+```
 * enll - Create a list of list rule.
 ```
 Rule ruleName As List = { _
